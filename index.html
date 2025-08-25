@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b4aab607c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Design</title>
+</head>
+
+<body>
+    <div id="header" class="header">
+        <div class="navbar">
+            <div class="nav_left">
+                <div id="nav_collapsed">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <a href="">Menu</a>
+                <a href="">About us</a>
+                <a href="">Market</a>
+            </div>
+            <div class="nav_right">
+                <a href="">Location</a>
+                <a href="">Catering</a>
+                <a href="" id="order_btn">Order</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="collapsed_menu" class="hidden">
+        <div id="collapsed_menu_items">
+            <a href="">Menu</a>
+            <a href="">About Us</a>
+            <a href="">Market</a>
+            <a href="">Location</a>
+            <a href="">Catering</a>
+        </div>
+    </div>
+
+    <div id="hero">
+        <div id="hero_img">
+            <img src="Food.avif" alt="">
+        </div>
+        <div id="hero_text">
+            <p>The chef's special</p>
+            <h2>Chicken Salad</h2>
+            <a href="" id='order_btn'>Order Now</a>
+        </div>
+    </div>
+
+
+    <script>
+        const btn = document.getElementById('nav_collapsed')
+        const targ = document.getElementById('collapsed_menu')
+        btn.onclick = function () {
+            targ.classList.toggle('shown');
+        }
+    </script>
+</body>
+
+</html>
